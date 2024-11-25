@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Section  */
+
+#bakery_header {
+    background-image: url(images/backery_header.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 25px;
+}
+#bakery_header .nav .logo img {
+    width: 65%;
+    cursor: pointer;
+}
+#bakery_header .nav{
+    display: flex;
+    justify-content: space-between;
+}
+#bakery_header .nav .nav_bar {
+    width: 40%;
+}
+#bakery_header .nav .nav_bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+#bakery_header .nav .nav_bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+#bakery_header .nav .nav_bar ul li a:hover {
+    color: #8e7656;
+}
+#bakery_header .content {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    height: 600px;
+}
+#bakery_header .content .welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#bakery_header .content h1 {
+    text-transform: capitalize;
+    margin: 4% 0;
+    font-size: 75px;
+}
+#bakery_header .content h1+p {
+    width: 100%;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+#bakery_header .content  .button-div {
+    width: 100%;
+    text-align: center;
+}
+#bakery_header .content  .button-div button {
+        color: white;
+        background-color: transparent;
+        padding: 4%;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: capitalize;
+        border: 2px white solid;
+}
+#bakery_header .content .button-div button:first-of-type {
+    background-color: #8e7656;
+    border: #8e7656 2px solid;
+    margin-right: 2%;
+}
+#bakery_header .content .button-div button:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Who We Are Section  */
+
+#who_we_are {
+    padding: 5% 2%;
+    display: flex;
+    justify-content: space-around;
+    color: #686868;
+}
+#who_we_are .left_side {
+    width: 40%;
+}
+#who_we_are .left_side img {
+    width: 100%;
+}
+#who_we_are .right_side div {
+    display: flex;
+    padding: 3% 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+#who_we_are .right_side div img {
+    width: 15%;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1%;
+}
+#who_we_are .right_side .trusted_icon {
+    width: 38%;
+} 
+#who_we_are .right_side .trusted_icon img {
+    width: 13%;
+}
+#who_we_are .right_side .heart_icon {
+    width: 26%;
+}
+#who_we_are .right_side .heart_icon img {
+    width: 19%;
+}
+#who_we_are .right_side .right_sign_icon {
+    width: 33%;
+}
+#who_we_are .right_side .right_sign_icon img {
+    width: 16%;
+}
+#who_we_are .right_side {
+    width: 50%;
+}
+#who_we_are .right_side h3 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+}
+#who_we_are .right_side h3+p {
+    line-height: 2;
+    margin: 3% 0;
+}
+/* Our Location Secition */
+
+#our_location {
+    background-color: #f8f8f8;
+    padding: 5%;
+    font-size: 18px;
+}
+#our_location div {
+    float: left;
+    margin-left: 6%;
+    line-height: 2;
+}
+.location_left {
+    width: 40%;
+    line-height: 1.7;
+    padding: 50px;
+}
+.location_left p {
+    color: #686868;
+}
+.location_left h3 {
+    font-weight: lighter;
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+.location_left h3+p {
+    margin-bottom: 5%;
+}
+.location_right {
+    width: 48%;
+}
+.location_right img {
+    width: 100%;
+}
+.clear_fix {
+    clear: both;
+}
+
+/* Our Baking Section*/
+
+#our_baking {
+    padding: 40px;
+    text-align: center;
+    color: #686868;
+}
+#our_baking h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+}
+#our_baking h3+p {
+    margin: 2% 0;
+}
+#our_baking .baking_imgs {
+    padding-top: 20px;
+}
+#our_baking .baking_imgs div {
+    float: left; 
+    width: 30%;
+}
+#our_baking .baking_imgs div img {
+    width: 100%;
+}
+#our_baking .baking_imgs .mid_img {
+    margin: 0 4%;
+}
+#our_baking .baking_imgs div h4 {
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgb(95, 95, 95);
+    margin: 5% 0;
+}
+#our_baking p {
+    line-height: 2;
+}
+
+/* Contact Information Section  */
+
+#contact_information {
+    background-color: #f8f8f8;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#contact_information .left_side {
+    width: 45%;
+    display: flex;
+    color: #686868;
+    flex-flow: column;
+    justify-content: space-between;
+}
+#contact_information .left_side h3 {
+    color: black;
+    font-size: 40px;
+    font-weight: lighter;
+}
+#contact_information .left_side h3+p {
+    line-height: 2;
+}
+#contact_information .left_side div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+#contact_information .left_side .tel-icon ,
+#contact_information .left_side .phone-icon {
+    width: 25%;
+}
+#contact_information .left_side .mail-icon {
+    width: 29%;
+}
+.down-num {
+    position: relative;
+    top: 2px;
+}
+#contact_information .right_map {
+    width: 50%;
+}
+#contact_information .right_map iframe {
+    width: 100%;
+}
+
+/* Footer Section  */               
+
+#footer {
+    background-color: #4a4742;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between; 
+    color: #757575;  
+}
+#footer h3 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: lighter;
+    color: white;
+}
+#footer div {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer h3 {
+    margin-bottom: 5%;
+}
+#footer .about-us p {
+    line-height: 2;
+}
+#footer .about-us p:first-of-type {
+    margin-bottom: 5%;
+}
+#footer .contact-details {
+    background-image: url(images/back-footer-location.png);
+}
+#footer .contact-details div {
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+}
+#footer img {
+    width: 5%;
+    margin-right: 5%;
+}
+#footer hr {
+    background-color: #757575;
+    border: 0;
+    height: .3%;
+}
+
+/* Copy Right Section  */
+
+.copy-right {
+    background-color: #353330;
+    color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy-right div {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.copy-right p {
+    padding: 2% 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    #who_we_are {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    #who_we_are .left_side {
+        width: 90%  
+    }
+    #who_we_are .right_side {
+        width: 100%;
+        padding: 4%;
+    }
+
+    #our_location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #our_location .location_left {
+        width: 100%;
+    }
+    #our_lcoatin .location_right {
+        width: 90%;
+    }
+    #who_we_are .right_side div:first-of-type {
+        width: 40% 
+    }
+    #who_we_are .right_side .trusted_icon {
+        width: 49%;
+    } 
+    #who_we_are .right_side .heart_icon {
+        width: 34%;
+    }
+    #who_we_are .right_side .right_sign_icon {
+        width: 43%;
+    }
+
+    #our_baking .baking_imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #our_baking .baking_imgs div {
+        width: 68%;
+    }
+    #our_baking .baking_imgs .mid_img {
+        margin: 5% 0;
+    }
+}
+@media (max-width: 1400px) {
+    #bakery_header .nav .nav_bar {
+        display: none;
+    }
+    #bakery_header .nav .logo {
+        margin: 0 auto;
+        text-align: center;
+        width: 45%;
+    }
+    #bakery_header .content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    h1 {
+        text-align: center;
+    }
+}    
+
