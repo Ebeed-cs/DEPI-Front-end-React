@@ -391,6 +391,52 @@
     #our_baking .baking_imgs .mid_img {
         margin: 5% 0;
     }
+
+    #contact_information {
+        flex-direction: column;
+    }
+    
+    #contact_information .left_side {
+        width: 100%;	
+        margin-bottom: 6%;
+    }
+    #contact_information .left_side div {
+        margin: 2% 0;
+    }
+    #contact_information .right_map {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+     }
+     #footer div {
+         width: 100%;
+         margin: 2% 0;
+     }
+     #footer p {
+         margin: 2% 0;
+     }
+     
+     .copy-right div {
+        width: 40%;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px){
+    #who_we_are .right_side .leave_icon {
+        width: 50%;
+    }  
+    #who_we_are .right_side .trusted_icon {
+        width: 62%;
+        }
+        
+    #who_we_are .right_side .heart_icon {
+        width: 43%;
+        }
+        
+    #who_we_are .right_side .right_sign_icon {
+        width: 54%;
+        }
 }
 @media (max-width: 1400px) {
     #bakery_header .nav .nav_bar {
