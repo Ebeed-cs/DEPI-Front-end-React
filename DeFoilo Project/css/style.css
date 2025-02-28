@@ -1,0 +1,323 @@
+/* =============================================================================
+   Navigation & Dropdown Styles
+============================================================================= */
+.dropdown-submenu {
+    position: absolute;
+    right: 100%;
+    top: 0;
+}
+.dropstart:hover > .dropdown-menu {
+    display: block;
+}
+
+/* =============================================================================
+   Hover Effect Styles
+============================================================================= */
+.line_hover_child::before {
+    transition: transform .5s;
+    content: "";
+    width: 80%;
+    transform: scale(0);
+    height: 5%;
+    left: 10%;
+    top: 80%;
+    position: absolute;
+    background-color: white;
+}
+.line_hover_child:hover::before {
+    transform: scale(1);
+}
+
+.blue_hover:hover {
+    color: #0278ff;
+}
+
+/* =============================================================================
+   Header Section Styles
+============================================================================= */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header .header-caption h1{
+    font-size: 60px;
+}
+
+header .header-caption span{
+    font-size: 30px;
+}
+
+/* =============================================================================
+   Common Section Styles
+============================================================================= */
+section{
+    padding-top: 100px;
+}
+
+.list-unstyled span{
+    font-weight: bold;
+} 
+
+/* =============================================================================
+   About Section Styles
+============================================================================= */
+#about h2{
+    position: relative;
+}
+
+#about h2::after{
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: #0278ff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+} 
+
+/* =============================================================================
+   Services Section Styles
+============================================================================= */
+#services .card .circle{
+    width: 100px;
+    height: 100px;
+    border: 8px solid #0278ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 1s;
+} 
+
+#services .card:hover .circle{
+    background-color: #0278ff;
+    color: #fff;
+    border: 8px solid rgb(211, 211, 214) ;
+}    
+
+/* =============================================================================
+   Achievement Section Styles
+============================================================================= */
+.circled{
+    border: 5px solid white;
+    padding: 5%;
+    border-radius: 50%;
+}
+#acievement{
+    background-image: linear-gradient(rgb(15, 109, 231),rgba(22, 105, 213, 0.3)),url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =============================================================================
+   Utility Classes
+============================================================================= */
+.line_5{
+    width: 5%;
+    height: 3%;
+    border-radius: 20%;
+    background-color: #0278ff;
+}
+.second_color{
+    color: #0278ff;
+}
+.font-10{
+    font-size: 10px;
+}
+/* =============================================================================
+   Work Section Styles
+============================================================================= */
+#work .circle {
+    border: 2px solid #0278ff;
+    padding: 2%;
+    border-radius: 50%;
+    margin-left: 39%;
+    cursor:pointer;
+}
+
+.hover-zoom {
+    transition: transform .8s;
+}
+.hover-zoom:hover {
+    transform: scale(1.2);
+}
+
+/* =============================================================================
+   Testimonial Section Styles
+============================================================================= */
+.testimonial-section {
+    background-image: linear-gradient(rgb(15, 109, 231),rgba(22, 105, 213, 0.3)),url(../images/overlay-bg.jpg);
+    padding: 80px 0;
+    color: white;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.testimonial-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+}
+
+.testimonial-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-img-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    background: white;
+    padding: 5px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    margin: 0 5px !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators button.active {
+    background-color: white !important;
+}
+
+/* =============================================================================
+   Card Styles
+============================================================================= */
+.card {
+    transition: transform 0.3s;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+}
+  
+.divider {
+    background-color: #007bff;
+}
+  
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+/* =============================================================================
+   Contact Section Styles
+============================================================================= */
+#contact {
+    background-image: linear-gradient(rgb(15, 109, 231),rgba(22, 105, 213, 0.3)),url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+#contact .circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0278ff;
+    border-radius: 50%;
+    color: #0278ff;
+    transition: all 0.3s ease;
+}
+
+#contact .circle:hover {
+    background-color: #0278ff;
+    color: white;
+}
+
+#contact .form-control {
+    border-radius: 0;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+#contact textarea.form-control {
+    min-height: 160px;
+}
+
+#contact .btn-primary {
+    background-color: #0278ff;
+    border-color: #0278ff;
+    transition: all 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#contact .contact-info i {
+    font-size: 18px;
+    width: 30px;
+}
+
+#contact h3 {
+    position: relative;
+    font-weight: 600;
+}
+
+#contact .line_5 {
+    width: 20%;
+    height: .5%;
+}
+
+/* =============================================================================
+   Footer Section Styles
+============================================================================= */
+footer {
+    background-color: #0278ff;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer .btn-primary {
+    transition: all 0.3s;
+}
+
+footer .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
