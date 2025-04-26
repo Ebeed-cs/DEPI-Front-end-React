@@ -47,6 +47,7 @@
 // const arr = [];
 // while(num --){
 //     arr.push(++counter)
+
 // }
 // console.log(arr.join(' '));
 // ------------------------------------- 8 ------------------
