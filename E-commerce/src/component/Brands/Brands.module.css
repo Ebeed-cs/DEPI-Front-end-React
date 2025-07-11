@@ -1,0 +1,178 @@
+/* Brands.css - Custom styles for the brands component */
+
+.brands-page {
+    min-height: 80vh;
+  }
+  
+  .brands-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .brands-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .brands-subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  .search-bar {
+    position: relative;
+    max-width: 400px;
+    margin-left: auto;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+  }
+  
+  .category-filters {
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  
+  .category-filter-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    color: #495057;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+  }
+  
+  .category-filter-btn:hover {
+    background-color: #e9ecef;
+  }
+  
+  .category-filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .brand-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .brand-card-inner {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .brand-card:hover .brand-card-inner {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #dee2e6;
+  }
+  
+  .brand-image-container {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow: hidden;
+  }
+  
+  .brand-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+  }
+  
+  .brand-card:hover .brand-image {
+    transform: scale(1.05);
+  }
+  
+  .brand-name {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .brand-products-count {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .brand-card:hover .hover-overlay {
+    opacity: 1;
+  }
+  
+  .hover-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .view-products-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .no-results {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .brands-header .row {
+      text-align: center;
+    }
+    
+    .search-bar {
+      margin: 1rem auto;
+      max-width: 100%;
+    }
+    
+    .brand-image-container {
+      height: 140px;
+    }
+  }
